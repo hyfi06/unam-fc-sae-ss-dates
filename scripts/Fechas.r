@@ -7,6 +7,7 @@ library("lubridate")
 library("dplyr")
 #library("ggplot2")
 
+
 Inhabil<-read.table(file = "Inhabil.txt",header=TRUE,sep = "\t",stringsAsFactors = FALSE)
 Inhabil$DIA <- ymd(Inhabil$DIA)
 str(Inhabil)
@@ -34,7 +35,7 @@ DiaInhabil<- function(x,UNAM=TRUE,I=Inhabil,fin=TRUE,vaca=FALSE){
 
 # Rango de fechas ####
 
-x<-data.frame(DIA=seq(ymd("20210101"),ymd("20251231"),by="day"))
+x <- data.frame(DIA = seq(ymd("20210101"), ymd("20251231"), by = "day"))
 
 # Fecha de entrega #####
 x$habil <- !DiaInhabil(x$DIA)

@@ -1,0 +1,11 @@
+Package: unam-fc-sae-ss-dates
+Title: Social Service Dates
+Version: 1.0.0
+Authors@R: 
+    person("Hector","Olvera Vital", email = "hector.olvera@ciencias.unam.mx")
+Description: Calculate dates for social service.
+License: MIT
+Depends:
+    dplyr,
+    lubridate
+Encoding: UTF-8

@@ -8,4 +8,6 @@ License: MIT
 Depends:
     dplyr,
     lubridate
+Suggests:
+    testthat
 Encoding: UTF-8

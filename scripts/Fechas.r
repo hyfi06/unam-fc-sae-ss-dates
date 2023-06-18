@@ -53,7 +53,7 @@ for(i in 1:dim(SS)[1]){
   while(j<10){
     k<-k+1
     if(!DiaInhabil(SS$ENTREGA[i]+k)){
-     j<-j+1
+      j<-j+1
     }
   }
   SS$INICIO[i]<-SS$ENTREGA[i]+k
@@ -64,7 +64,7 @@ SS$TERMINOnoUNAM<-SS$ENTREGA
 
 for(i in 1:dim(SS)[1]){
   l<-seq(SS$INICIO[i],by="month",length.out = 7)[7]
-  
+
   while(DiaInhabil(l,UNAM = FALSE)){
     l<-l+1
   }
